@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>239210302树洞 | 匿名留言板</title><!-- 引入外部样式表 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body><!-- 顶部导航栏 -->
+    <header class="navbar">
+        <div class="container">
+            <h1>小小树洞<span class="subtitle">欢迎留言~</span></h1>
+        </div>
+    </header><!-- 主体内容区 -->
+    <main class="container"><!-- 左侧/上方：发布框 -->
+        <section class="input-card">
+            <div class="card-header">
+                <h3>我要留言</h3>
+            </div>
+            <div class="card-body"><textarea id="msgInput" placeholder="在这里写下你想说的话...（支持匿名，畅所欲言）"
+                    maxlength="200"></textarea>
+                <div class="action-bar"><span id="charCount">0/200</span><button id="sendBtn" class="btn-primary">发送留言
+                        </button></div>
+            </div>
+        </section><!-- 列表区：展示留言 -->
+        <section class="message-area">
+            <div class="list-header">
+                <h2>最新动态</h2><span class="refresh-tip">自动同步中...</span>
+            </div><!-- 这里是 JS 动态插入留言的地方 -->
+            <ul id="msgList" class="message-list">
+                <li class="message-card">
+                    <div class="msg-content">你好，世界！</div>
+                    <div class="msg-meta">
+                        <span class="time">2023/11/26 10:00</span>
+                        <button class="btn-delete">删除</button>
+                    </div>
+                </li> 
+               </ul>
+        </section>
+    </main><!-- 底部版权 -->
+    <footer>
+        <p>&copy; 239210302《Web开发技术》课程实践项目</p>
+    </footer><!-- 引入脚本 -->
+    <script src="script.js"></script>
+</body>
+
+</html>
